@@ -7,3 +7,5 @@ RSpec.describe Preference, type: :model do
     expect(p.allow_create_songs).to eq true
   end
 end
+bin/rails g controller Preference allow_create_artists:boolean allow_create_songs:boolean --no-test-framework
+bin/rails destory controller Preference allow_create_artists:boolean allow_create_songs:boolean
